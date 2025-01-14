@@ -17,57 +17,57 @@ import aSC from './assets/icons/aSC.png'
 
 const Skills = ()=>{
     return(
-        <div className="p-6 pt-12 bg-gray">
-            <h1 className="text-3xl text-white text-center mb-6">Skills</h1>
-            <div className="flex flex-wrap justify-center gap-4">
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-full h-48 object-cover text-center justify-center items-center flex" src={html} alt="html Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-full h-48 object-cover" src={css} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-full h-48 object-cover" src={js} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-full h-48 object-cover" src={php} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-full h-48 object-cover" src={Kotlin} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 object-cover" src={MySQl} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 object-cover" src={git} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 object-cover" src={github} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 object-cover" src={jQuery} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 object-cover" src={react} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 object-cover" src={laravel} alt="Card Image" />
-                </div>
-                <div className="w-48 bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-36 h-36 align-center object-cover" src={tailwind} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 align-center object-cover" src={Bootstrap} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 align-center object-cover" src={vSC} alt="Card Image" />
-                </div>
-                <div className="max-w-sm bg-black rounded-lg shadow-md overflow-hidden">
-                    <img className="w-48 h-48 align-center object-cover" src={aSC} alt="Card Image" />
-                </div>
-
-            </div>
+        <div className="p-4 pt-8 bg-gray-800">
+    <h1 className="text-2xl text-white text-center mb-4">Skills</h1>
+    <div className="flex flex-wrap justify-center gap-2">
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={html} alt="HTML Image" />
         </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={css} alt="CSS Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={js} alt="JavaScript Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={php} alt="PHP Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={Kotlin} alt="Kotlin Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={MySQl} alt="MySQL Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={git} alt="Git Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={github} alt="GitHub Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={jQuery} alt="jQuery Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={react} alt="React Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={laravel} alt="Laravel Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={tailwind} alt="Tailwind CSS Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={Bootstrap} alt="Bootstrap Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={vSC} alt="VS Code Image" />
+        </div>
+        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
+            <img className="w-32 h-32 object-cover" src={aSC} alt="Another Skill Image" />
+        </div>
+    </div>
+</div>
+
     
     )
 }

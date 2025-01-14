@@ -9,6 +9,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
+import Contact from './Contact';
 
 function App() {
   const handleScroll = (e, targetId) => {
@@ -136,6 +137,9 @@ function App() {
       </div>
       <div id='projects'>
         <Projects />
+      </div>
+      <div id='contact'>
+        <Contact />
       </div>
     </div>
     
