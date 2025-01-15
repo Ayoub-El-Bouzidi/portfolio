@@ -10,7 +10,7 @@ const Educations = () => {
   return (
     <div className="p-6 pt-12 bg-black">
       <motion.h1
-        className="text-3xl text-white text-center mb-6"
+        className="text-4xl font-bold text-white text-center mb-4"
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}

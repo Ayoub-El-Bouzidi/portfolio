@@ -18,52 +18,52 @@ import aSC from './assets/icons/aSC.png'
 const Skills = ()=>{
     return(
         <div className="p-4 pt-8 bg-gray-800">
-    <h1 className="text-2xl text-white text-center mb-4">Skills</h1>
-    <div className="flex flex-wrap justify-center gap-2">
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={html} alt="HTML Image" />
+    <h1 className="text-4xl font-bold text-white text-center mb-4">Skills</h1>
+    <div className="flex flex-wrap justify-center gap-6">
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 " src={html} alt="HTML Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={css} alt="CSS Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={css} alt="CSS Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={js} alt="JavaScript Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={js} alt="JavaScript Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={php} alt="PHP Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-18 h-16 object-cover" src={php} alt="PHP Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={Kotlin} alt="Kotlin Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={Kotlin} alt="Kotlin Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={MySQl} alt="MySQL Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-18  object-cover" src={MySQl} alt="MySQL Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={git} alt="Git Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-18 object-cover" src={git} alt="Git Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={github} alt="GitHub Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={github} alt="GitHub Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={jQuery} alt="jQuery Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={jQuery} alt="jQuery Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={react} alt="React Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={react} alt="React Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={laravel} alt="Laravel Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={laravel} alt="Laravel Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={tailwind} alt="Tailwind CSS Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-18 object-cover" src={tailwind} alt="Tailwind CSS Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={Bootstrap} alt="Bootstrap Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={Bootstrap} alt="Bootstrap Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={vSC} alt="VS Code Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={vSC} alt="VS Code Image" />
         </div>
-        <div className="max-w-xs bg-black rounded-md shadow-sm overflow-hidden">
-            <img className="w-32 h-32 object-cover" src={aSC} alt="Another Skill Image" />
+        <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <img className="w-16 h-16 object-cover" src={aSC} alt="Another Skill Image" />
         </div>
     </div>
 </div>
