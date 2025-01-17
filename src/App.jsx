@@ -62,8 +62,8 @@ function App() {
       </p>
       {/* Social Icons */}
       <div className="flex justify-center lg:justify-start space-x-4 text-blue-500 text-3xl mt-6">
-        <a href="https://www.linkedin.com/in/ayoub-el-bouzidi-0897a9298/"><FontAwesomeIcon icon={faLinkedin} /></a>
-        <a href="https://github.com/Ayoub-El-Bouzidi"><FontAwesomeIcon icon={faGithub} /></a>
+        <a href="https://www.linkedin.com/in/ayoub-el-bouzidi-0897a9298/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a href="https://github.com/Ayoub-El-Bouzidi" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
         <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
         <a href=""><FontAwesomeIcon icon={faWhatsapp} /></a>
       </div>
