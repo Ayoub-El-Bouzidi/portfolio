@@ -6,8 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 import Contact from './Contact';
 
@@ -28,10 +26,10 @@ function App() {
   };
   return (
     <div className="App">
-  <header className="App-header fixed w-full z-10 bg-gray-500">
+  <header className="App-header fixed w-full z-10 bg-current">
     <nav className="flex items-center justify-between px-4 py-4 sm:px-6 md:px-8">
       {/* Logo */}
-      <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub</h1>
+      <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
 
       {/* Navigation Links */}
       <div className="flex flex-col sm:flex-row text-sm sm:text-lg space-y-2 sm:space-y-0 sm:space-x-6">
@@ -40,7 +38,7 @@ function App() {
         <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="text-white hover:text-blue-500 transition-colors duration-300">Skills</a>
         <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="text-white hover:text-blue-500 transition-colors duration-300">Projects</a>
         <a href="#experiences" className="text-white hover:text-blue-500 transition-colors duration-300">Experiences</a>
-        <a href="#contact" className="text-white hover:text-blue-500 transition-colors duration-300">Contact</a>
+        <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-white hover:text-blue-500 transition-colors duration-300">Contact</a>
       </div>
     </nav>
   </header>
@@ -62,10 +60,8 @@ function App() {
       </p>
       {/* Social Icons */}
       <div className="flex justify-center lg:justify-start space-x-4 text-blue-500 text-3xl mt-6">
-        <a href="https://www.linkedin.com/in/ayoub-el-bouzidi-0897a9298/"><FontAwesomeIcon icon={faLinkedin} /></a>
-        <a href="https://github.com/Ayoub-El-Bouzidi"><FontAwesomeIcon icon={faGithub} /></a>
-        <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
-        <a href=""><FontAwesomeIcon icon={faWhatsapp} /></a>
+        <a href="https://www.linkedin.com/in/ayoub-el-bouzidi-0897a9298/" target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a href="https://github.com/Ayoub-El-Bouzidi" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
       </div>
       {/* Buttons */}
       <div className="flex justify-center lg:justify-start space-x-4 mt-6">
@@ -73,7 +69,7 @@ function App() {
           Hire me
         </button>
         <button className="w-24 rounded-lg btn bg-blue-500 text-white hover:bg-blue-600 flex items-center justify-center">
-          <a href="/cv_de_stage.pdf" download="Ayoub_El_Bouzidi_CV.pdf" className="flex items-center space-x-2 text-white">
+          <a href="/cv.pdf" download="Ayoub_El_Bouzidi_CV.pdf" className="flex items-center space-x-2 text-white">
             <span>Cv</span>
             <FontAwesomeIcon icon={faFileArrowDown} />
           </a>
@@ -83,7 +79,7 @@ function App() {
   </div>
 
   {/* Sections */}
-  <div id="education" className="p-4 sm:p-8">
+  <div id="education" className="p-4 sm:p-8 mt-20">
     <Educations />
   </div>
   <div id="skills" className="p-4 sm:p-8">
