@@ -18,6 +18,7 @@ import aSC from './assets/icons/aSC.png'
 import java from './assets/icons/java.png'
 import nodeJs from './assets/icons/nodeJs.png'
 import mongoDb from './assets/icons/mongodb.png'
+import vue from './assets/icons/vue.png'
 import { motion } from "framer-motion";
 
 const Skills = ()=>{
@@ -68,6 +69,9 @@ const Skills = ()=>{
                 </div>
                 <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:shadow-blue-400">
                     <img className="w-16 h-16 object-cover" src={react} alt="" />
+                </div>
+                <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:shadow-blue-400">
+                    <img className="w-18 h-16 object-cover" src={vue} alt="" />
                 </div>
                 <div className="w-32 h-32 bg-black rounded-md shadow-sm overflow-hidden flex items-center justify-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:shadow-red-600">
                     <img className="w-16 h-16 object-cover" src={laravel} alt="" />

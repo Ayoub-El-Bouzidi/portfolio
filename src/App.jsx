@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import Contact from './Contact';
 
@@ -25,9 +26,16 @@ function App() {
     }
   };
   return (
-    <div className="App w-min">
+    <div className="App lg:w-full w-min">
   <header className="App-header fixed w-full z-10 bg-current">
-    <nav className="flex items-center justify-between px-4 py-4 sm:px-6 md:px-8">
+    <div className='flex items-center justify-between lg:hidden p-5'>
+      <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
+      <span className='text-white p-6'>
+        <FontAwesomeIcon className='w-12 h-12' icon={faBars} />
+      </span>
+    </div>
+  
+    <nav className="flex items-center justify-between px-4 py-4 sm:px-6 md:px-8 lg:flex hidden">
       {/* Logo */}
       <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
 
@@ -44,7 +52,7 @@ function App() {
   </header>
 
   {/* Body */}
-  <div className="flex flex-col items-center justify-center min-h-screen p-8 lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
+  <div className="flex flex-col lg:flex-row lg:justify-center items-center justify-center min-h-screen p-8 lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
   <div>
     <img
       src={logo}
