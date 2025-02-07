@@ -1,4 +1,5 @@
 import logo from './assets/logo.jpg';
+import { useState } from 'react';
 import Skills from './Skills';
 import Educations from './Education';
 import Projects from './Projects';
@@ -9,6 +10,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import Contact from './Contact';
+import { HashRouter as Router,Routes,Route } from 'react-router-dom';
 
 function App() {
   const handleScroll = (e, targetId) => {
@@ -25,17 +27,21 @@ function App() {
       });
     }
   };
+  const [isMenuOpen , setIsMenuOpen] = useState(false);
+  const toggleMenu = ()=>{
+    setIsMenuOpen(!isMenuOpen);
+  }
   return (
     <div className="App lg:w-full w-min">
   <header className="App-header fixed w-full z-10 bg-current">
     <div className='flex items-center justify-between lg:hidden p-5'>
       <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
-      <span className='text-white p-6'>
+      <span className='text-white p-6 menu' onClick={toggleMenu}>
         <FontAwesomeIcon className='w-12 h-12' icon={faBars} />
       </span>
     </div>
   
-    <nav className="flex items-center justify-between px-4 py-4 sm:px-6 md:px-8 lg:flex hidden">
+    <nav className={`flex flex-col items-center lg:justify-between lg:block lg:flex lg:flex-row p-4 bg-gray-800 text-white space-y-4 transition-all duration-300  ${isMenuOpen ? 'block' : 'hidden'}`}>
       {/* Logo */}
       <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
 
