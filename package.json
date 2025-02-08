@@ -1,6 +1,6 @@
 {
-  "private": true,
-  "homepage": "https://AyoubElBouzidi.github.io/Ayoub-El-Bouzidi",
+  "private": false,
+  "homePage": "https://ayoub-el-bouzidi.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "dependencies": {
