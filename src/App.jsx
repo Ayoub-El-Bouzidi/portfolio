@@ -41,18 +41,18 @@ function App() {
       </span>
     </div>
   
-    <nav className={`flex flex-col items-center lg:justify-between lg:block lg:flex lg:flex-row p-4 bg-gray-800 text-white space-y-4 transition-all duration-300  ${isMenuOpen ? 'block' : 'hidden'}`}>
+    <nav className={`flex flex-col items-center lg:justify-between lg:block lg:flex lg:flex-row p-4 bg-black text-white space-y-8 transition-all duration-300  ${isMenuOpen ? 'block' : 'hidden'}`}>
       {/* Logo */}
-      <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
+      <h1 className="text-blue-500 text-4xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
 
       {/* Navigation Links */}
-      <div className="flex flex-col sm:flex-row text-sm sm:text-lg space-y-2 sm:space-y-0 sm:space-x-6">
-        <a href="#home" className="text-white hover:text-blue-500 transition-colors duration-300">Home</a>
-        <a href="#education" onClick={(e) => handleScroll(e, "education")} className="text-white hover:text-blue-500 transition-colors duration-300">Educations</a>
-        <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="text-white hover:text-blue-500 transition-colors duration-300">Skills</a>
-        <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="text-white hover:text-blue-500 transition-colors duration-300">Projects</a>
-        <a href="#experiences" className="text-white hover:text-blue-500 transition-colors duration-300">Experiences</a>
-        <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-white hover:text-blue-500 transition-colors duration-300">Contact</a>
+      <div className="flex flex-col sm:flex-row text-sm sm:text-lg space-y-4 sm:space-y-0 sm:space-x-6">
+        <a href="#home" className="text-white hover:text-blue-500 transition-colors duration-300 text-3xl">Home</a>
+        <a href="#education" onClick={(e) => handleScroll(e, "education")} className="text-white text-3xl hover:text-blue-500 transition-colors duration-300">Educations</a>
+        <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="text-white hover:text-blue-500 text-3xl transition-colors duration-300">Skills</a>
+        <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="text-white hover:text-blue-500 text-3xl transition-colors duration-300">Projects</a>
+        <a href="#experiences" className="text-white hover:text-blue-500 transition-colors duration-300 text-3xl">Experiences</a>
+        <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-white hover:text-blue-500 text-3xl transition-colors duration-300">Contact</a>
       </div>
     </nav>
   </header>
