@@ -34,7 +34,7 @@ function App() {
     <div className="App lg:w-full w-min">
   <header className="App-header fixed w-full z-10 bg-current">
     <div className='flex items-center justify-between lg:hidden p-5'>
-      <h1 className="text-blue-500 text-2xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
+      <h1 className="text-blue-500 text-4xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
       <span className='text-white p-6 menu' onClick={toggleMenu}>
         <FontAwesomeIcon className='w-12 h-12' icon={faBars} />
       </span>
@@ -57,7 +57,7 @@ function App() {
   </header>
 
   {/* Body */}
-  <div className="flex flex-col lg:flex-row lg:justify-center items-center justify-center min-h-screen p-8 lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
+  <div className="flex flex-col lg:flex-row pt-28 lg:justify-center items-center justify-center min-h-screen p-8  lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
   <div>
     <img
       src={logo}
@@ -66,17 +66,17 @@ function App() {
     />
   </div>
   <div className="text-center lg:text-left">
-    <h3 className="text-white text-2xl sm:text-3xl">
+    <h3 className="text-white text-4xl sm:text-3xl">
       Hi, It's <span className="text-blue-500 font-bold">Ayoub El Bouzidi</span> <br />
       I'm a <span className="text-blue-500 font-bold animate-pulse">Full-Stack Developer</span>
     </h3>
-    <p className="text-white mt-4 text-sm md:text-base">
+    <p className="text-white mt-4 text-2xl md:text-base">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
       Suspendisse varius enim in eros elementum tristique.<br />
       Nulla facilisi. Duis aliquet.
     </p>
     {/* Social Icons */}
-    <div className="flex justify-center lg:justify-start space-x-4 text-blue-500 text-3xl mt-6">
+    <div className="flex justify-center lg:justify-start space-x-4 text-blue-500 text-5xl mt-6">
       <a href="https://www.linkedin.com/in/ayoub-el-bouzidi-0897a9298/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
@@ -86,10 +86,10 @@ function App() {
     </div>
     {/* Buttons */}
     <div className="flex justify-center lg:justify-start space-x-4 mt-6">
-      <button className="w-24 border-blue-500 border-solid border-2 rounded-lg h-8 btn text-blue-500 hover:bg-blue-500 hover:text-white">
+      <button className="w-28 text-xl border-blue-500 border-solid border-2 rounded-lg h-8 btn text-blue-500 hover:bg-blue-500 hover:text-white">
         Hire me
       </button>
-      <button className="w-24 rounded-lg btn bg-blue-500 text-white hover:bg-blue-600 flex items-center justify-center">
+      <button className="w-28 text-xl rounded-lg btn bg-blue-500 text-white hover:bg-blue-600 flex items-center justify-center">
         <a href="/cv.pdf" download="Ayoub_El_Bouzidi_CV.pdf" className="flex items-center space-x-2 text-white">
           <span>CV</span>
           <FontAwesomeIcon icon={faFileArrowDown} />

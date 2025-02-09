@@ -4,8 +4,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useRef , useState } from 'react';
 import emailjs from "@emailjs/browser";
-import { p } from 'framer-motion/client';
-
+import alertify from 'alertifyjs';
+import "alertifyjs/build/css/alertify.min.css";
 
 
 
@@ -23,11 +23,11 @@ function Contact() {
       )
       .then(
         (result)=>{
-          console.log("succes",result.text);
-          setSent(true);
+          alertify.success("Message sent successfully!")
+          form.current.reset();
         },
         (error)=>{
-          console.log("Error",error.text);
+          alertify.error("Failed to send message. Try again!")
         }
       )
     }
@@ -50,9 +50,11 @@ function Contact() {
             </div>
             <div>
               {sent ? (
-                <p className='text-green-500'>Message sent successfully!</p>
+                <div className='lg:top-10 lg:flex absolutex lg:justify-center lg:relative lg:ml-16'>
+                  <p className='text-green-500 absolute'></p>
+                </div>
               ):(
-                <form ref={form} onSubmit={sendEmail} class="max-w-sm mx-auto">
+                <form ref={form} onSubmit={sendEmail} class="max-w-sm mx-auto lg:block">
                 <div class="mb-5">
                   <input type="text" id="name" name='user_name' className="caret-blue-500 lg:block bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Your Full Name" required />
                 </div>
