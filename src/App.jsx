@@ -7,10 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import './App.css';
 import Contact from './Contact';
-
 function App() {
   const handleScroll = (e, targetId) => {
     e.preventDefault();
@@ -36,7 +37,7 @@ function App() {
     <div className='flex items-center justify-between lg:hidden p-5'>
       <h1 className="text-blue-500 text-4xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
       <span className='text-white p-6 menu' onClick={toggleMenu}>
-        <FontAwesomeIcon className='w-12 h-12' icon={faBars} />
+        <FontAwesomeIcon className='w-12 h-12' icon={isMenuOpen ? faXmark:faBars} />
       </span>
     </div>
   
@@ -45,7 +46,7 @@ function App() {
       <h1 className="text-blue-500 text-4xl md:text-3xl font-bold">Ayoub <span>El Bouzidi</span></h1>
 
       {/* Navigation Links */}
-      <div className="flex flex-col sm:flex-row text-sm sm:text-lg space-y-4 sm:space-y-0 sm:space-x-6">
+      <div className="flex flex-col sm:flex-row text-sm sm:text-lg space-y-9 sm:space-y-0 sm:space-x-6">
         <a href="#home" className="text-white hover:text-blue-500 transition-colors duration-300 text-3xl lg:text-xl">Home</a>
         <a href="#education" onClick={(e) => handleScroll(e, "education")} className="text-white text-3xl hover:text-blue-500 transition-colors duration-300 lg:text-xl">Educations</a>
         <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="text-white hover:text-blue-500 text-3xl transition-colors duration-300 lg:text-xl">Skills</a>
@@ -57,7 +58,7 @@ function App() {
   </header>
 
   {/* Body */}
-  <div className="flex flex-col lg:flex-row pt-28 lg:justify-center items-center justify-center min-h-screen p-8  lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
+  <div id='home' className="flex flex-col lg:flex-row pt-28 lg:justify-center items-center justify-center min-h-screen p-8  lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
   <div>
     <img
       src={logo}

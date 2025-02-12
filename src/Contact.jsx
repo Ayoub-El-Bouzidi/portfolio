@@ -13,6 +13,7 @@ function Contact() {
   
     const form = useRef();
     const [sent , setSent] = useState(false);
+    alertify.set('notifier','position','top-centern')
     const sendEmail = (e)=>{
       e.preventDefault();
       emailjs.sendForm(
