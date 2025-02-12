@@ -58,7 +58,7 @@ function App() {
   </header>
 
   {/* Body */}
-  <div id='home' className="flex flex-col lg:flex-row pt-28 lg:justify-center items-center justify-center min-h-screen p-8  lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
+  <div id='home' className="flex flex-col lg:flex-row pt-44 lg:justify-center items-center justify-center min-h-screen p-8 lg:p-28 space-y-12 lg:space-y-0 lg:space-x-24">
   <div>
     <img
       src={logo}
