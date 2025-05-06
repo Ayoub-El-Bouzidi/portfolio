@@ -3,12 +3,15 @@ import { useState } from 'react';
 import Skills from './Skills';
 import Educations from './Education';
 import Projects from './Projects';
+import Experiences from './Experiences';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+// import { ThemeContext } from "../context/ThemeContext";
 
 import './App.css';
 import Contact from './Contact';
@@ -31,6 +34,7 @@ function App() {
   const toggleMenu = ()=>{
     setIsMenuOpen(!isMenuOpen);
   }
+  
   return (
     <div className="App lg:w-full w-min">
   <header className="App-header fixed w-full z-10 bg-current">
@@ -51,7 +55,7 @@ function App() {
         <a href="#education" onClick={(e) => handleScroll(e, "education")} className="text-white text-3xl hover:text-blue-500 transition-colors duration-300 lg:text-xl">Educations</a>
         <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="text-white hover:text-blue-500 text-3xl transition-colors duration-300 lg:text-xl">Skills</a>
         <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="text-white hover:text-blue-500 text-3xl transition-colors duration-300 lg:text-xl">Projects</a>
-        <a href="#experiences" className="text-white hover:text-blue-500 transition-colors duration-300 text-3xl lg:text-xl">Experiences</a>
+        <a href="#experiences" onClick={(e) => handleScroll(e, "experience")} className="text-white hover:text-blue-500 transition-colors duration-300 text-3xl lg:text-xl">Experiences</a>
         <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-white hover:text-blue-500 text-3xl transition-colors duration-300 lg:text-xl">Contact</a>
       </div>
     </nav>
@@ -78,11 +82,14 @@ function App() {
     </p>
     {/* Social Icons */}
     <div className="flex justify-center lg:justify-start space-x-4 text-blue-500 text-5xl mt-6">
-      <a href="https://www.linkedin.com/in/ayoub-el-bouzidi-0897a9298/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/ayoub-el-bouzidi-0897a9298/" target="_blank" rel="noopener noreferrer" className='hover:scale-110 hover:shadow-lg hover:shadow-blue-700'>
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
-      <a href="https://github.com/Ayoub-El-Bouzidi" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/Ayoub-El-Bouzidi" target="_blank" rel="noopener noreferrer" className='hover:scale-110 hover:shadow-lg hover:shadow-blue-700'>
         <FontAwesomeIcon icon={faGithub} />
+      </a>
+      <a href="https://wa.me/212696176900" target="_blank" rel="noopener noreferrer" className='hover:scale-110 hover:shadow-lg hover:shadow-blue-700' >
+        <FontAwesomeIcon icon={faWhatsapp}  />
       </a>
     </div>
     {/* Buttons */}
@@ -97,6 +104,7 @@ function App() {
         </a>
       </button>
     </div>
+    
   </div>
 </div>
 
@@ -109,6 +117,9 @@ function App() {
   </div>
   <div id="projects" className="p-4 sm:p-8">
     <Projects />
+  </div>
+  <div id="experience" className="p-4 sm:p-8">
+    <Experiences />
   </div>
   <div id="contact" className="p-4 sm:p-8">
     <Contact />

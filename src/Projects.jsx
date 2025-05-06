@@ -4,7 +4,7 @@ import foodProject1 from "./assets/projects/foodProject1.png"
 import foodProject2 from "./assets/projects/foodProject2.png"
 import foodProject3 from "./assets/projects/foodProject3.png"
 import foodProject4 from "./assets/projects/foodProject4.png"
-import watcheEcommerce from "./assets/projects/watcheEcommerce.png";
+import dataPro from "./assets/projects/dataPro.png";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
@@ -39,17 +39,17 @@ const Projects = () => {
                 <div className="max-w-sm bg-gray-700 rounded-lg shadow-md overflow-hidden">
                     <div className="m-3">
                     <div className="flex justify-center items-center">
-                        <button onClick={handlePreviousImage} className="absolute text-blue-500 mr-80" aria-label="Previous Image">
+                        {/* <button onClick={handlePreviousImage} className="absolute text-blue-500 mr-80" aria-label="Previous Image">
                             <FontAwesomeIcon className="size-7" icon={faArrowLeft} />
-                        </button>
+                        </button> */}
                         <img
                             className="w-62 h-62 object-cover"
                             src={images[currentImageIndex]}
                             alt={`Project view ${currentImageIndex + 1}`} loading="lazy"
                         />
-                        <button onClick={handleNextImage} className="absolute text-blue-500 ml-80" aria-label="Next Image">
+                        {/* <button onClick={handleNextImage} className="absolute text-blue-500 ml-80" aria-label="Next Image">
                             <FontAwesomeIcon className="size-7" icon={faArrowRight} />
-                        </button>
+                        </button> */}
                     </div>
 
                         
@@ -81,24 +81,32 @@ const Projects = () => {
                 <div className="max-w-sm bg-gray-700 rounded-lg shadow-md overflow-hidden">
                     <div className="m-3">
                     <div className="flex justify-center items-center">
-                        <button onClick={handlePreviousImage} className="absolute text-blue-500 mr-80" aria-label="Previous Image">
+                        {/* <button onClick={handlePreviousImage} className="absolute text-blue-500 mr-80" aria-label="Previous Image">
                             <FontAwesomeIcon className="size-7" icon={faArrowLeft} />
-                        </button>
+                        </button> */}
                         <img
                             className="w- h-92 object-cover"
-                            src={watcheEcommerce}
+                            src={dataPro}
                             alt="" loading="lazy"
                         />
-                        <button onClick={handleNextImage} className="absolute text-blue-500 ml-80" aria-label="Next Image">
+                        {/* <button onClick={handleNextImage} className="absolute text-blue-500 ml-80" aria-label="Next Image">
                             <FontAwesomeIcon className="size-7" icon={faArrowRight} />
-                        </button>
+                        </button> */}
                     </div>
 
                         
                         <hr />
-                        <h1 className="text-blue-500 lg:text-2xl text-4xl font-mono mt-3">Watches Ecommerce</h1>
+                        <h1 className="text-blue-500 lg:text-2xl text-4xl font-mono mt-3">DataPro</h1>
                         <h2 className="text-blue-700 lg:text-2xl text-3xl mt-3">2025</h2>
-                        <p className="text-white lg:text-xl text-2xl mt-3">A wache ecommerce app is web-based platform that allows users to search and buy watches.</p><br />
+                        <p className="text-white lg:text-xl text-2xl mt-3"><span className="text-3xl">DataPro</span> is an innovative eCommerce website specializing in the sale of car parts and accessories.
+                            It offers a user-friendly platform where customers can browse, search, and purchase automotive pieces easily.
+                            The website supports secure user authentication and personalized accounts for order tracking.
+                            An advanced filtering system allows users to find parts by car make, model, and year.
+                            Sellers can list their products and manage inventory through a dedicated dashboard.
+                            Integrated payment gateways ensure safe and smooth transactions.
+                            Responsive design ensures accessibility across all devices.
+                            DataPro aims to become a reliable hub for quality car parts with excellent customer service.
+                        </p><br />
                         <div className="space-y-2">
                             <div className="flex space-x-3 spac-y-3">
                                 <h3 className="btn border-solid border-2 w-24 rounded-lg text-center border-blue-500 text-blue-600">#Laravel</h3>
@@ -111,7 +119,7 @@ const Projects = () => {
                             </div>    
                         </div>
                         
-                        <a href="https://github.com/Ayoub-El-Bouzidi/real-soli-ecommerce" target="__blank" rel="noopener noreferrer" className="icon-link text-white">
+                        <a href="https://github.com/Ayoub-El-Bouzidi/dataPro" target="__blank" rel="noopener noreferrer" className="icon-link text-white">
                             <button type="button" className="btn mt-3 w-28 p-1 bg-blue-600 rounded-lg text-2xl hover:bg-gray-500 border-blue-500 border-2">
                                 <FontAwesomeIcon icon={faGithub} />
                             </button>
@@ -121,17 +129,17 @@ const Projects = () => {
                 <div className="max-w-sm bg-gray-700 rounded-lg shadow-md overflow-hidden">
                     <div className="m-3">
                     <div className="flex justify-center items-center">
-                        <button onClick={handlePreviousImage} className="absolute text-blue-500 mr-80" aria-label="Previous Image">
+                        {/* <button onClick={handlePreviousImage} className="absolute text-blue-500 mr-80" aria-label="Previous Image">
                             <FontAwesomeIcon className="size-7" icon={faArrowLeft} />
-                        </button>
+                        </button> */}
                         <img
                             className="w-62 h-62 object-cover"
                             src={images[currentImageIndex]}
                             alt={`Project view ${currentImageIndex + 1}`} loading="lazy"
                         />
-                        <button onClick={handleNextImage} className="absolute text-blue-500 ml-80" aria-label="Next Image">
+                        {/* <button onClick={handleNextImage} className="absolute text-blue-500 ml-80" aria-label="Next Image">
                             <FontAwesomeIcon className="size-7" icon={faArrowRight} />
-                        </button>
+                        </button> */}
                     </div>
 
                         
